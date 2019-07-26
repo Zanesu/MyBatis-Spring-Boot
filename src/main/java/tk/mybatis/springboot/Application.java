@@ -34,6 +34,7 @@ public class Application implements CommandLineRunner, WebMvcConfigurer {
 
 	@RequestMapping("/")
 	String home() {
-		return "redirect:countries";
+		System.out.println("running man");
+		return "redirect:login/login";
 	}
 }
