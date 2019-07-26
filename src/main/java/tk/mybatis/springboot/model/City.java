@@ -24,10 +24,13 @@
 
 package tk.mybatis.springboot.model;
 
+import javax.persistence.Table;
+
 /**
  * @author liuzh_3nofxnp
  * @since 2016-01-22 22:16
  */
+@Table(name="city")
 public class City extends BaseEntity {
     private String name;
 
