@@ -207,4 +207,9 @@ public class RedisService {
 		ZSetOperations<String, Object> zset = redisTemplate.opsForZSet();
 		return zset.rangeByScore(key, scoure, scoure1);
 	}
+
+	public Object opsForValue() {
+		// TODO Auto-generated method stub
+		return redisTemplate.opsForValue();
+	}
 }
